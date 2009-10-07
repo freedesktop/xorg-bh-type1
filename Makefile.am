@@ -55,7 +55,7 @@ install-data-hook:
 	$(MKFONTSCALE) $(DESTDIR)$(fontdir)
 	@rm -f $(DESTDIR)$(fontdir)/font.dir
 	$(MKFONTDIR) $(DESTDIR)$(fontdir)
-	$(FCCACHE) $(DESTDIR)$(fontdir)
+	@RUN_FCCACHE@
 
 distuninstallcheck:
 	@:
